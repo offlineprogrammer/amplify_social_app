@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "amplifysocialapp",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/tmp/amplify-2ea3a07a-102f-4925-baa5-c11407d73fbf/amplify/backend/api/amplifysocialapp/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "keyDescription": "api key description",
+      "expirationTime": 30
+    },
+    "conflictResolution": {
+      "defaultResolutionStrategy": {
+        "type": "AUTOMERGE"
+      }
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "AWS_IAM"
+      },
+      {
+        "mode": "AMAZON_COGNITO_USER_POOLS",
+        "cognitoUserPoolId": "authamplifysocialapp4d02260a"
+      }
+    ]
+  }
+}
