@@ -45,8 +45,8 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: authenticator,
-      // home: _amplifyConfigured ? LoadingPage() : _waitForAmplify(),
+      // home: authenticator,
+      home: _amplifyConfigured ? authenticator : _waitForAmplify(),
     );
   }
 
